@@ -1,7 +1,7 @@
 # lumina-oz-games
 Repo for sharing game development content
 
-WELLCOME TO THE LUMINA OZ GAME DEVELOPENT GITHUB.
+WELLCOME TO THE LUMINA OZ GAME DEVELOPENT GITHUB. \\
 Here you will find free game development tools, code and assets to power up your game development start
 we aim to help people to start on this world and provide tools to make the journey a little more fun.
 

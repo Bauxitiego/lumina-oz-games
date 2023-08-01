@@ -17,10 +17,12 @@ class PacManGame:
         #self.pacman_image = pygame.image.load("pacman.png")
         self.wall_image = pygame.image.load("assets/WallGraySepia.jpg")
         self.header_image = pygame.image.load("assets\WoodenBrownBiggerSharpenC.jpg")
+        self.character_image = pygame.image.load("assets/charcter.png")
 
         # Resize the images to fit the cell size
         self.wall_image = pygame.transform.scale(self.wall_image, (self.cell_size, self.cell_size))
         self.header_image = pygame.transform.scale(self.header_image, (self.cell_size, self.cell_size))
+        self.character_image = pygame.transform.scale(self.character_image, (self.cell_size, self.cell_size))
         
          # Initialize remaining coins count
         self.remaining_coins = sum(row.count('.') for row in self.grid)
@@ -45,7 +47,7 @@ class PacManGame:
                 elif self.grid[y][x] == '.':
                     pygame.draw.circle(screen, (255, 255, 0), (x * self.cell_size + self.cell_size // 2, y * self.cell_size + self.cell_size // 2), 4)
                 elif self.grid[y][x] == 'P':
-                    pygame.draw.rect(screen, (0, 255, 0), (x * self.cell_size, y * self.cell_size, self.cell_size, self.cell_size))
+                    screen.blit(self.character_image, (x * self.cell_size, y * self.cell_size))
                 elif self.grid[y][x] == "*":
                     screen.blit(self.header_image, (x * self.cell_size, y * self.cell_size))
         pygame.display.update()
@@ -60,9 +62,7 @@ class PacManGame:
 
         # Draw the score text on top of the background rectangle
         screen.blit(score_text, score_rect)
-
         pygame.display.update()
-
 
     def handle_input(self):
         for event in pygame.event.get():

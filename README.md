@@ -5,9 +5,8 @@ WELLCOME TO THE LUMINA OZ GAME DEVELOPENT GITHUB.
 Here you will find free game development tools, code and assets to power up your game development start
 we aim to help people to start on this world and provide tools to make the journey a little more fun.
 
-<img src="banner.png" width="128"
-    width="472" 
-    height="163" />
+<img src="banner.png"
+    width="100%" height="100%" />
 
 
 #All games developed in Python will use PyGame library. 

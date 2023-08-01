@@ -137,7 +137,7 @@ class PacManGame:
     def run(self):
         pygame.init()
         screen = pygame.display.set_mode((self.width, self.height))
-        pygame.display.set_caption("Pac-Man Game")
+        pygame.display.set_caption("Maze Basic Game - Lumina Oz")
 
         while not self.game_over:
             self.handle_input()

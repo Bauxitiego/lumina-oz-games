@@ -6,7 +6,7 @@ Here you will find free game development tools, code and assets to power up your
 we aim to help people to start on this world and provide tools to make the journey a little more fun.
 
 <img src="banner.png"
-    width="100%" height="100%" />
+    width="60%" height="60%" />
 
 
 #All games developed in Python will use PyGame library. 
